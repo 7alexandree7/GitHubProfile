@@ -22,7 +22,7 @@ const NavBar = () => {
               src="/logo.png"
               width={36}
               height={36}
-              alt="Picture of the author"
+              alt="Picture of the testando"
         />
         <TypingAnimation  text="GitHub Profile"/>
       </div>
