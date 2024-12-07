@@ -1,10 +1,7 @@
 import React from "react";
-import { Input } from "../ui/input";
-import { BellRing, Heart, Mail } from "lucide-react";
-import PulsatingButton from "../ui/pulsating-button";
-import AvatarCircles from "../ui/avatar-circles";
-import Image from "next/image";
-import TypingAnimation from "../ui/typing-animation";
+import FirstChildLeft from "../Header-firstChildLeft/FirstChildLeft";
+import HeaderSearch from "../HeaderSearch/HeaderSearch";
+import LastChildRight from "../Header-LastChildRight/LastChildRight";
 //border-[1px] border-solid border-red-500
 
 const avatarData = [
@@ -16,34 +13,21 @@ const avatarData = [
 
 const NavBar = () => {
   return (
-    <div className="flex w-full justify-between items-center pt-6 pl-12 pr-12">
-      <div className="flex items-center gap-4 w-[280px]">
-        <Image 
-              src="/logo.png"
-              width={36}
-              height={36}
-              alt="Picture of the testando"
-        />
-        <TypingAnimation  text="GitHub Profile"/>
-      </div>
+    <>
+      <div className="absolute top-0 left-0 w-full h-[180px] bg-gradient-to-r from-[#A2D2FF] via-[#CDB4DB] to-[#FFC8DD] z-0"></div>
 
-      <div className="w-[400px]">
-        <Input placeholder="Search for a user..."/>
-      </div>
+      <div className="relative z-10 flex w-full justify-between items-center pt-6 pl-6 pr-6">
+        <FirstChildLeft />
 
-      <div className="flex gap-4 items-center">
-        <div className="flex gap-4">
-          <Mail />
-          <BellRing />
+        <div className="w-[400px]">
+          <HeaderSearch />
         </div>
-        <div>
-          <PulsatingButton />
-        </div>
-        <div>
-          <AvatarCircles avatarUrls={avatarData} />
+
+        <div className="flex gap-4 items-center">
+          <LastChildRight />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

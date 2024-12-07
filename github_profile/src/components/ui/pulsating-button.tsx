@@ -32,8 +32,7 @@ export default function PulsatingButton({
       {...props}
     >
       {/* Texto ou conteúdo do botão */}
-      <span className="relative z-10">Upload  </span>
-      
+      <a  href='https://github.com/7alexandree7' target="_blank" className="relative z-10">Look Profile</a>
       {/* Camada de pulsação */}
       <div
         className="absolute top-1/2 left-1/2 w-full h-full rounded-lg bg-inherit animate-pulse -translate-x-1/2 -translate-y-1/2 pointer-events-none"
