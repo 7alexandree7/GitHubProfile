@@ -8,8 +8,8 @@ import LastChildRight from "../Header-LastChildRight/LastChildRight";
 const NavBar = () => {
   return (
     <>
-      <div className="absolute top-0 left-0 w-full h-[180px] z-0 overflow-hidden">
-      </div>
+    <div className="absolute top-0 left-0 w-full h-[180px] z-0 overflow-hidden bg-gradient-to-r from-[#A2D2FF] via-[#CDB4DB] to-[#FFC8DD]">
+    </div>
 
       <div className="relative z-10 flex w-full justify-between items-center pt-6 pl-6 pr-6">
         <FirstChildLeft />
